@@ -35,7 +35,7 @@
                         <article class="book_card">
                             <a href="{{ url('/books/' . $book['id']) }}" class="book_image_link">
                                 @if (!empty($book['image']))
-                                    <img src="{{ asset($book['image']) }}" alt="{{ $book['title'] }}" class="book_image">
+                                    <img src="{{ asset('storage/' . $book['image']) }}" alt="{{ $book['title'] }}" class="book_image">
                                 @else
                                     <div class="book_image" style="display: flex; align-items: center; justify-content: center; background: #f3f3f3;">
                                         画像なし

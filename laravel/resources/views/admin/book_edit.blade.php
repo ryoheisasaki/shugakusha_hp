@@ -33,7 +33,7 @@
 
                             @if (!empty($book->image))
                                 <div style="margin-bottom: 8px;">
-                                    <img src="{{ asset($book->image) }}" alt="{{ $book->title }}" style="max-width: 180px;">
+                                    <img src="{{ asset('storage/' . $book->image) }}" alt="{{ $book->title }}" style="max-width: 180px;">
                                 </div>
                             @endif
 

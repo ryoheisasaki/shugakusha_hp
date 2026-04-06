@@ -13,7 +13,7 @@
         <section class="detail_main">
             <div class="detail_inner">
                 <div class="detail_image">
-                    <img src="{{ asset($book['image']) }}" alt="{{ $book['title'] }}">
+                    <img src="{{ asset('storage/' . $book['image']) }}" alt="{{ $book['title'] }}" class="book_image">
                 </div>
 
                 <div class="detail_info">
