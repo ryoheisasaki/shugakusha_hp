@@ -22,4 +22,4 @@ RUN mkdir -p database \
 
 EXPOSE 10000
 
-CMD sh -c "php artisan config:clear && php artisan route:clear && php artisan view:clear && php artisan migrate --force && php -S 0.0.0.0:${PORT:-10000} -t public public/index.php"
+CMD sh -c "php artisan config:clear && php artisan migrate --force && php -S 0.0.0.0:10000 -t public"
